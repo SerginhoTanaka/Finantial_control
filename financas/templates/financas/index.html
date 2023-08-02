@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <button onclick="mostrarTabela()">Mostrar Tabela</button>
+    <table id="minhaTabela" style="display: none;">
+        <tr>
+
+            <th>account</th>
+            <th>type</th>
+            <th>date</th>
+            <th>category</th>
+            <th>description</th>
+            <th>value</th>
+            
+        </tr>
+    {% for control in controls %}
+        
+        <tr>
+
+            <td>{{ control.account }}</td>
+            <td>{{ control.type }}</td>
+            <td>{{ control.date }}</td>
+            <td>{{ control.category }}</td>
+            <td>{{ control.description }}</td>
+            <td>{{ control.value }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
     <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
