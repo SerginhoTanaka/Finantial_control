@@ -1,5 +1,5 @@
 function mostrarTabela() {
-    var tabela = document.getElementById("minhaTabela");
+    var tabela = document.getElementsByClassName("minhaTabela");
     if (tabela.style.display === "none") {
         tabela.style.display = "table"; 
     } else {

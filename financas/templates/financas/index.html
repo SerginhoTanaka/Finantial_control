@@ -11,7 +11,7 @@
     <button onclick="mostrarTabela()">Mostrar Tabela</button>
     <table id="minhaTabela" style="display: none;">
         <tr>
-
+            <th>id</th>
             <th>account</th>
             <th>type</th>
             <th>date</th>
@@ -23,7 +23,7 @@
     {% for control in controls %}
         
         <tr>
-
+            <td>{{ control.id }}</td>
             <td>{{ control.account }}</td>
             <td>{{ control.type }}</td>
             <td>{{ control.date }}</td>
