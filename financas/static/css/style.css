@@ -1,47 +1,65 @@
-/* Definindo as cores principais */
-body {
-    background-color: black;
-    color: white;
-}
-
-/* Estilo do botão */
-.mostrar-tabela-btn {
-    background-color: green;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-bottom: 10px;
+body, h1, p, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000000; 
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #6b8e23;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff; 
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #6b8e23;
+    padding: 5px 10px;
+  }
+  
+  .menu a {
+    margin-left: 1rem;
+    color: #ffffff; 
     cursor: pointer;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+
 }
 
-/* Estilo da tabela */
-.minha-tabela {
+  table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.minha-tabela th, .minha-tabela td {
+  }
+  
+  th, td {
+    border: 1px solid #6b8e23; 
     padding: 8px;
-    border-bottom: 1px solid white;
     text-align: left;
-}
-
-.minha-tabela th {
-    background-color: green;
-}
-
-/* Estilizar as linhas pares da tabela */
-.minha-tabela tr:nth-child(even) {
-    background-color: #333;
-}
-
-/* Estilizar as linhas ímpares da tabela */
-.minha-tabela tr:nth-child(odd) {
-    background-color: #555;
-}
-
-/* Estilo para quando passar o mouse sobre a tabela */
-.minha-tabela tr:hover {
-    background-color: #666;
-}
+  }
+  
+  th {
+    background-color: #228b22; 
+    color: #ffffff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #228b22;
+  }
+  
+  tr:hover {
+    background-color: #003300; 
+  }
+  

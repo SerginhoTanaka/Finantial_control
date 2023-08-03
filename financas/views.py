@@ -2,6 +2,7 @@ from django.shortcuts import render
 import sqlite3
 import pandas as pd 
 from .models import Control
+import matplotlib as plt     
 def index(request):
     
     df = pd.read_excel('teste.xlsx')
@@ -11,3 +12,6 @@ def index(request):
 
     controls = Control.objects.filter()
     return render(request, 'financas/index.html', {'controls':controls})
+
+def graphs(request):
+    return

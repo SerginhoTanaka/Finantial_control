@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <button onclick="mostrarTabela()">Mostrar Tabela</button>
+    <header>
+        <h1>Controle de gastos</h1>
+        <div class="menu">
+            <a>Graficos</a>
+            <a  onclick="mostrarTabela()">Tabela</a>
+        </div>
+    </header>
     <table id="minhaTabela" style="display: none;">
         <tr>
             <th>id</th>
@@ -18,10 +24,8 @@
             <th>category</th>
             <th>description</th>
             <th>value</th>
-            
         </tr>
-    {% for control in controls %}
-        
+        {% for control in controls %}
         <tr>
             <td>{{ control.id }}</td>
             <td>{{ control.account }}</td>
@@ -31,7 +35,7 @@
             <td>{{ control.description }}</td>
             <td>{{ control.value }}</td>
         </tr>
-    {% endfor %}
+        {% endfor %}
     </table>
 
     <script src="{% static 'js/script.js' %}"></script>
